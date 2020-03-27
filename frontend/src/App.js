@@ -1,26 +1,34 @@
+//import React,{useState} from 'react';
+//import Header from './Header';
+
+// function App() {
+//   const [counter,seCounter] = useState(1);
+
+//   function increment () {
+//     seCounter(counter+1);
+
+//   }
+//   return (
+//     <div>
+//     <Header>Contador: {counter}</Header> 
+//     <button onClick={increment}>Incrementar</button>
+//     </div>     
+//   );
+// }
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Routes from './routes'; // sempre procura pela pagina index.js
+
+
+import './global.css'; // sempre procura pela pagina index.js
+
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Olá Mundo
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Routes/>  
   );
 }
+
 
 export default App;
